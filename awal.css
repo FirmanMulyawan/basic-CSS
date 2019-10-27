@@ -1,0 +1,15 @@
+/* sintaks css yaitu 
+selector { property:value} 
+contohnya adalah 
+h1 {color:blue;} */
+/* selector digunakan untuk memilih dan memanipulasi elemen spesifik pada HTML  */
+/* elemen HTML dipilih berdasarkan tag, id, class bahkan pola / pattern.  */
+/* semakin kompleks struktur HTML, selector juga bisa semakin kompleks/ spesifik  */
+
+/* cara menyimpan css 
+- embed yaitu menyimpan file scc di bagian head dengan menggunakan 
+tag style 
+- inline masih di  dalam halaman yang sama dengan menyimpan
+style css di bagian tag yang dituju
+- external yaitu memisahkan css dengan HHTML dengan cara
+<link rel ="stylesheet" href="style.css">*/

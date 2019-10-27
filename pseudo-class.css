@@ -1,0 +1,78 @@
+/* pseudo-class adalah sebuah class semu yang dimiliki
+oleh sebuah elemen HTML, yang  membuat kita dapat 
+mendefinisikan style pada keadaan tertentu dari elemen tersebut  */
+
+/* pseudo-class yang berhubungan dengan link  */
+/* : link 
+style default pada sebuah link (a yang memiliki href)
+:hover 
+style ketika kursor mouse berada diatas sebuah link / elemen
+: active 
+style ketika sebuah link di klik (keadaan aktif)
+: visited 
+style ketika sebuah link sudah pernah dikunjungi sebelumnya 
+(menggunakan browser yang sama ) */
+
+/* untuk memanggil pseudo-class yaitu dengan titik dua  */
+.hello:link {
+    color: orange;
+}
+
+.hello:hover {
+    color: greenyellow;
+    font-family: arial;
+    font-size: 20px;
+}
+
+.hello:active {
+    font-style: italic;
+}
+
+.hello:visited {
+    color: yellow;
+}
+
+/* pseudo-class yang berhubungan dengan posisi elemen (1) */
+/* :first-child */
+/* memilih elemen pertama dari sebuah parent (elemen pembungkusnya) */
+/* :last-child */
+/* memilih elemen terakhir dari sebuah parent (elemen pembungkusnya) */
+/* :nth-child(n) */
+/* memilih elemen ke-n dari sebuah parent (elemen pembungkusnya) */
+/* n bisa berupa urutan (1),(2).. atau pola (2n),(3n+2),(4n-1) atau 
+ganjil dan genap (even) & (odd) */
+
+/* dari kasus diatas ul memiliki anak 10 li
+li memiliki anak 1 yaitu a dari masing-masing li */
+
+/* css tolong carikan saya a yang ada di dalam li yang merupakan anak pertama  */
+li:first-child a {
+    color: palevioletred;
+}
+
+/* css tolong carikan saya a yang ada di dalam li yang merupakan anak terakhir  */
+li:last-child a {
+    color: green;
+}
+
+li:nth-child(3n-1) a {
+    color: red;
+}
+
+li:nth-child(3n-1) a:hover {
+    color: yellow;
+}
+
+/* pseudo-class yang berhubungan dengan posisi elemen (2) */
+/* :first-of-type */
+/* memilih elemen pertama dari sebuah jenis / tipe tag  */
+/* :last-of-type  */
+/* memilih elemen terakhir dari sebuah jenis / tipe tag  */
+
+p:first-of-type {
+    color: royalblue;
+}
+
+p:last-of-type {
+    color: salmon;
+}

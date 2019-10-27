@@ -1,0 +1,21 @@
+/* belajar mengenai text styling  */
+h1 {
+    font-size: 50px;
+    color: skyblue;
+    /* text decoration bisa dibuat
+    untuk menghilangkan garis bawah di link  */
+    text-decoration: underline;
+    /* mengatur jarak spasi antar kata  */
+    word-spacing: 50px;
+}
+
+p {
+    text-align: justify;
+    /* untuk tab paragraf */
+    text-indent: 100px;
+    /* memaksa huruf untuk menjadi lowercase, 
+    uppercase, capitalize, none  */
+    text-transform: uppercase;
+    /* mengatur jarak dari huruf ke huruf  berikutnya  */
+    letter-spacing: 20px;
+}

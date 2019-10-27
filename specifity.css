@@ -1,0 +1,43 @@
+/* specifity adalah setiap deklarasi css (selector)
+memiliki berat yang berbeda. berat tersebut menentukan 
+seberapa spesifik sebuah elemen dapat dipilih 
+oleh selector.  */
+
+/* contoh specifity */
+/* nanti warnanya bakalan hijau karena warna 
+hijau  menimpa warna merah   */
+p {
+    color: red;
+}
+
+/* kalo pake id lebih spesifik  */
+#p1 {
+    color: red;
+}
+
+p {
+    color: green;
+}
+
+/* inline   id   class   elemen  */
+/*    0      0     0        0     */
+
+
+
+/* inline   id   class   elemen  */
+/*    0      1     0        2     */
+ul#sarapan li {
+    color: green;
+}
+
+/* inline   id   class   elemen  */
+/*    0      0     1        0     */
+.favorite {
+    color: red;
+}
+
+/* inline   id   class   elemen  */
+/*    0      1     1        2 elemen nya ul dan li     */
+ul#sarapan li.favorite {
+    color: blueviolet;
+}
